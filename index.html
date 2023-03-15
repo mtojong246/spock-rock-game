@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spock Rock Game</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+</head>
+<body>
+	<div class="game-box">
+		<div class="title-container">
+			<span>Rock Paper Scissors Lizard Spock</span>
+		</div>	
+		<div class="player-container align">
+			<div class="player-score-container">
+				<span>You - <span class="playerScore">0</span><span class="player-choice"></span>
+			</div>
+			<div class="player-icon-container spread">
+				<i class="fa-regular fa-hand-back-fist player" title="Rock" id="playerRock"></i>
+				<i class="fa-regular fa-hand player" title="Paper" id="playerPaper"></i>
+				<i class="fa-regular fa-hand-scissors player" title="Scissors" id="playerScissors"></i>
+				<i class="fa-regular fa-hand-lizard player" title="Lizard" id="playerLizard"></i>
+				<i class="fa-regular fa-hand-spock player" title="Spock" id="playerSpock"></i>
+			</div>
+		</div>
+		<div class="computer-container align">
+			<div class="computer-score-container">
+				<span>Computer - <span class="computerScore">0</span></span><span class="computer-choice"></span>
+			</div>
+			<div class="computer-icon-container spread">
+				<i class="fa-regular fa-hand-back-fist" title="Rock" id="computerRock"></i>
+				<i class="fa-regular fa-hand" title="Paper" id="computerPaper"></i>
+				<i class="fa-regular fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+				<i class="fa-regular fa-hand-lizard" title="Lizard" id="computerLizard"></i>
+				<i class="fa-regular fa-hand-spock" title="Spock" id="computerSpock"></i>
+			</div>
+		</div>
+		<div class="reset-container align">
+			<i class="fa-solid fa-arrows-rotate reset"></i>
+		</div>
+		<div class="message-container">
+			<span class="message"></span>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://kit.fontawesome.com/ec4bebac75.js" crossorigin="anonymous"></script>
+	<script src="confetti.js"></script>
+</body>
+</html>

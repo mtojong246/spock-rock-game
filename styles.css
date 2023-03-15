@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+}
+
+.game-box {
+    background-color: white;
+    box-shadow: 0px 5px 5px grey;
+    height: 550px; 
+    width: 500px;
+    border-radius: 10px;
+}
+
+.title-container {
+    width: 100%;
+    background-color: #1aa3ff;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    padding: 25px 0;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.align {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.spread {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.player-container {
+    height: 30%;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 38px;
+}
+
+.player-icon-container {
+    color: #1aa3ff;
+    font-size: 3em;
+}
+
+.player-icon-container i:hover, .reset-container i:hover{
+    cursor: pointer;
+}
+
+.computer-container {
+    height: 30%;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 38px;
+}
+
+.computer-icon-container {
+    color: red;
+    font-size: 3em;
+}
+
+.reset-container {
+    padding-left: 38px;
+    margin-top: 0px;
+    font-size: 2em;
+}
+
+.message-container {
+    font-size: 28px;
+    height: 10%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .game-box {
+        height: 450px;
+        width: 400px;
+    }
+    .player-icon-container, .computer-icon-container {
+        font-size: 2.2em;
+    }
+    .reset-container{
+        font-size: 1.25em;
+    }
+    .title-container {
+        font-size: 22px;
+    }
+    .player-container, .computer-container {
+        font-size: 20px;
+    }
+    .message-container {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .game-box {
+        height: 350px;
+        width: 300px;
+    }
+    .reset-container{
+        font-size: 0.75em;
+    }
+    .title-container {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .player-container, .computer-container {
+        font-size: 16px;
+    }
+    .player-icon-container, .computer-icon-container {
+        font-size: 1.9em;
+    }
+    .message-container {
+        font-size: 16px;
+    }
+}
